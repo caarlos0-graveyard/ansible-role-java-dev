@@ -1,0 +1,11 @@
+galaxy_info:
+  author: Carlos Alexandro Becker
+  description: Installs JDK 7 and 8, Maven and Gradle.
+  license: MIT
+  min_ansible_version: 2.0
+  galaxy_tags:
+    - development
+    - java
+    - maven
+    - gradle
+dependencies: []
