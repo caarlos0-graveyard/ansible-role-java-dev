@@ -1,3 +1,4 @@
+- homebrew: update_homebrew=yes
 - homebrew_cask: name={{item}}
   with_items:
     - java
