@@ -1,4 +1,4 @@
-- homebrew_tap: caskroom/versions
+- homebrew_tap: tap=caskroom/versions
 - homebrew: update_homebrew=yes
 - homebrew_cask: name={{item}}
   with_items:
