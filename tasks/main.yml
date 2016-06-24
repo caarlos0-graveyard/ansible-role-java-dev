@@ -1,5 +1,5 @@
 - include: main_{{ ansible_distribution }}.yml
-- package: name={{item}}
+- package: name={{item }}
   with_items:
     - gradle
     - maven
