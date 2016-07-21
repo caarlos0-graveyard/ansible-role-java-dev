@@ -7,7 +7,7 @@ os:
 install:
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo pip install ansible; printf '\n%s\n%s\n' '[privilege_escalation]' 'become = True' >> ansible.cfg; fi
   - if [ "$TRAVIS_OS_NAME" != "linux" ]; then brew update; brew install ansible; fi
-  - ansible -version
+  - ansible --version
 script: ansible-playbook tests/test.yml -i tests/inventory
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
