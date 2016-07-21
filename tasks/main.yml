@@ -1,4 +1,5 @@
 - include: main_{{ ansible_distribution }}.yml
+  become: "{{ ansible_os_family == 'Darwin' }}"
 - package: name={{ item }}
   become: "{{ ansible_os_family != 'Darwin' }}"
   with_items:

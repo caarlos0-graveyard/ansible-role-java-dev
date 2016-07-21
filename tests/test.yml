@@ -1,5 +1,4 @@
 ---
 - hosts: localhost
-  become: "{{ ansible_os_family == 'Darwin' }}"
   roles:
     - ansible-role-java-dev
