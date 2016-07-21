@@ -1,5 +1,6 @@
 - include: main_{{ ansible_distribution }}.yml
-- package: name={{item }}
+- package: name={{ item }}
+  become: "{{ ansible_os_family != 'Darwin' }}"
   with_items:
     - gradle
     - maven

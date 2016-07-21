@@ -7,3 +7,4 @@
   with_items:
     - oracle-java7-installer
     - oracle-java8-installer
+- command: update-java-alternatives -s java-8-oracle
