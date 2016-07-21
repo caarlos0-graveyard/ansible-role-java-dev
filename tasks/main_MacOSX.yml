@@ -1,9 +1,6 @@
 - homebrew_tap: tap=caskroom/versions
-  become: false
 - homebrew: update_homebrew=yes
-  become: false
 - homebrew_cask: name={{ item }}
-  become: false
   with_items:
     - java
     - java7
