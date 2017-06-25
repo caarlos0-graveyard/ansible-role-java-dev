@@ -1,10 +1,8 @@
 - apt_repository: repo='ppa:webupd8team/java'
 - debconf: name="{{ item }}" question='shared/accepted-oracle-license-v1-1' value='true' vtype='select'
   with_items:
-    - oracle-java7-installer
     - oracle-java8-installer
 - package: name={{ item }}
   with_items:
-    - oracle-java7-installer
     - oracle-java8-installer
 - command: update-java-alternatives -s java-8-oracle
